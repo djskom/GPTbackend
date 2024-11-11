@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: groq-flask-app
+    env: python
+    buildCommand: |
+      pip install --upgrade pip setuptools wheel
+      pip install --no-use-pep517 -r requirements.txt
+    startCommand: "python app.py"
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
