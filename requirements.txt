@@ -1,0 +1,4 @@
+Flask==2.3.2
+dotenv==0.0.1
+groq==1.0.0
+requests==2.31.0
